@@ -88,6 +88,9 @@
             background: linear-gradient(180deg, rgba(5, 7, 10, 0.4) 0%, rgba(5, 7, 10, 0.7) 100%);
             z-index: 1;
         }
+        input[type=range] {
+            accent-color: #1D4ED8;
+        }
         @media (max-width: 380px) {
             .hero-title { font-size: 2.5rem !important; line-height: 1.1; }
         }
@@ -169,6 +172,60 @@
         </div>
     </section>
 
+    <!-- Agency Introduction Section -->
+    <section class="py-24 px-4 sm:px-6 relative bg-dark-900 overflow-hidden">
+        <!-- Subtle Background Accent -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-blue/5 rounded-full blur-[120px] pointer-events-none"></div>
+        
+        <div class="container mx-auto max-w-6xl relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-20 items-center">
+                <div class="space-y-8 text-center lg:text-left order-last lg:order-first">
+                    <div class="space-y-4">
+                        <div class="inline-block px-3 py-1 rounded-full bg-brand-blue/10 border border-brand-blue/20 text-brand-blue text-xs font-bold uppercase tracking-widest mb-2">
+                            Who We Are
+                        </div>
+                        <h2 class="text-3xl sm:text-5xl font-heading font-bold leading-tight">
+                            The Future of <br>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-brand-gold text-glow">Performance Marketing.</span>
+                        </h2>
+                        <div class="w-20 h-1.5 bg-brand-gold mx-auto lg:mx-0 rounded-full"></div>
+                    </div>
+                    
+                    <p class="text-gray-300 text-lg sm:text-xl leading-relaxed font-medium">
+                        At <span class="text-white font-bold underline decoration-brand-blue decoration-2 underline-offset-4">Infinity Ads</span>, we don't just buy traffic. We architect sustainable, ROI-first growth engines.
+                    </p>
+                    
+                    <p class="text-gray-500 text-base sm:text-lg leading-relaxed">
+                        Our collective of data scientists and creative strategists work in absolute unison to bypass the limitations of modern advertising. We believe in radical transparency, technical mastery, and aggressive scaling that takes your brand from its current ceiling to infinite potential.
+                    </p>
+
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-8 pt-4">
+                        <div class="space-y-1">
+                            <h4 class="text-white font-bold text-3xl font-heading tracking-tighter">75M+</h4>
+                            <p class="text-gray-500 text-[10px] font-bold uppercase tracking-[0.2em]">Budget Managed</p>
+                        </div>
+                        <div class="w-px h-12 bg-white/10 hidden sm:block"></div>
+                        <div class="space-y-1">
+                            <h4 class="text-white font-bold text-3xl font-heading tracking-tighter">100%</h4>
+                            <p class="text-gray-500 text-[10px] font-bold uppercase tracking-[0.2em]">Data Transparency</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative group px-4 sm:px-0">
+                    <div class="absolute -inset-4 bg-gradient-to-tr from-brand-blue/20 to-brand-gold/20 rounded-[40px] blur-2xl opacity-50 group-hover:opacity-100 transition-all duration-700"></div>
+                    <div class="glass p-2 rounded-[40px] overflow-hidden relative shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=2940" alt="Infinity Ads Intelligence" class="rounded-[38px] grayscale hover:grayscale-0 transition-all duration-1000 w-full h-auto object-cover aspect-[4/3] lg:aspect-auto">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 glass p-6 rounded-3xl border border-brand-gold/30 hidden sm:block shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+                        <p class="text-brand-gold font-black text-xs uppercase tracking-tighter mb-1">Scale Specialist</p>
+                        <p class="text-white text-3xl font-heading font-black tracking-tighter">Infinity ROI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Services Section -->
     <section class="py-16 sm:py-24 px-4 sm:px-6 bg-dark-800" id="services">
         <div class="container mx-auto max-w-7xl">
@@ -178,32 +235,36 @@
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                <!-- Facebook Meta -->
                 <div class="glass p-6 sm:p-8 rounded-2xl sm:rounded-3xl hover:bg-white/[0.04] transition-all duration-300 group hover:-translate-y-2 border border-white/5">
-                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-brand-blue/20 flex items-center justify-center mb-4 sm:mb-6 text-brand-blue">
-                        <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-brand-blue/20 flex items-center justify-center mb-4 sm:mb-6 text-brand-blue group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                     </div>
                     <h3 class="text-lg sm:text-xl font-heading font-bold mb-2 sm:mb-3">Facebook Meta</h3>
                     <p class="text-gray-500 text-xs sm:text-sm leading-relaxed">High-converting ad funnels and pattern-interrupt creative for Facebook & Instagram.</p>
                 </div>
 
+                <!-- Google Ads -->
                 <div class="glass p-6 sm:p-8 rounded-2xl sm:rounded-3xl hover:bg-white/[0.04] transition-all duration-300 group hover:-translate-y-2 border border-white/5">
-                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-brand-gold/20 flex items-center justify-center mb-4 sm:mb-6 text-brand-gold">
-                        <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-brand-gold/20 flex items-center justify-center mb-4 sm:mb-6 text-brand-gold group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>
                     </div>
                     <h3 class="text-lg sm:text-xl font-heading font-bold mb-2 sm:mb-3">Google Ads</h3>
                     <p class="text-gray-500 text-xs sm:text-sm leading-relaxed">Dominating Search, YouTube & PMAX to capture high-intent buyers exactly when they're looking.</p>
                 </div>
 
+                <!-- TikTok -->
                 <div class="glass p-6 sm:p-8 rounded-2xl sm:rounded-3xl hover:bg-white/[0.04] transition-all duration-300 group hover:-translate-y-2 border border-white/5">
-                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-white/5 flex items-center justify-center mb-4 sm:mb-6 text-white">
-                        <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.65-1.62-1.12-1.61 2.75-4.97 5.5-9.04 4.88-3.08-.24-5.69-2.3-6.57-5.28-.9-2.98.05-6.09 2.5-8.08 1.72-1.42 4-2.16 6.28-1.78.2.03.4.07.6.13V2.17c-.57-.18-1.17-.28-1.77-.28-3.04.03-5.74 2.18-6.39 5.21-.65 3.02.77 6.05 3.39 7.42 2.63 1.37 6 1.05 8.23-1.07 1.72-1.64 2.4-4.14 1.71-6.56h3.1c.36 1.95 1.48 3.73 3.1 4.88 1.62 1.15 3.65 1.54 5.56 1.08v-4.04c-1.64.09-3.23-.51-4.44-1.68-1.2-1.17-1.83-2.81-1.75-4.5h-4.12z"/></svg>
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-white/5 flex items-center justify-center mb-4 sm:mb-6 text-white group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.65-1.62-1.12-1.61 2.75-4.97 5.5-9.04 4.88-3.08-.24-5.69-2.3-6.57-5.28-.9-2.98.05-6.09 2.5-8.08 1.72-1.42 4-2.16 6.28-1.78.2.03.4.07.6.13V2.17c-.57-.18-1.17-.28-1.77-.28-3.04.03-5.74 2.18-6.39 5.21-.65 3.02.77 6.05 3.39 7.42 2.63 1.37 6 1.05 8.23-1.07 1.72-1.64 2.4-4.14 1.71-6.56h3.1c.36 1.95 1.48 3.73 3.1 4.88 1.62 1.15 3.65 1.54 5.56 1.08v-4.04c-1.64.09-3.23-.51-4.44-1.68-1.2-1.17-1.83-2.81-1.75-4.5h-4.12z"/></svg>
                     </div>
                     <h3 class="text-lg sm:text-xl font-heading font-bold mb-2 sm:mb-3">TikTok Ads</h3>
                     <p class="text-gray-500 text-xs sm:text-sm leading-relaxed">UGC-focused creative strategy and viral scaling for the world's fastest-growing platform.</p>
                 </div>
 
+                <!-- Media Buying -->
                 <div class="glass p-6 sm:p-8 rounded-2xl sm:rounded-3xl hover:bg-white/[0.04] transition-all duration-300 group hover:-translate-y-2 border border-white/5">
-                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-brand-blue/20 flex items-center justify-center mb-4 sm:mb-6 text-brand-blue">
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-brand-blue/20 flex items-center justify-center mb-4 sm:mb-6 text-brand-blue group-hover:scale-110 transition-transform">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 sm:w-6 sm:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                     </div>
                     <h3 class="text-lg sm:text-xl font-heading font-bold mb-2 sm:mb-3">Media Buying</h3>
@@ -300,6 +361,81 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section class="py-24 px-4 sm:px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-5xl font-heading font-bold mb-4">What Our Partners Say</h2>
+                <div class="w-24 h-1 bg-brand-blue mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass p-8 sm:p-10 rounded-[32px] border border-brand-blue/10 relative">
+                    <svg class="w-10 h-10 text-brand-blue/20 absolute top-8 right-8" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017V14H15.017C13.3601 14 12.017 12.6569 12.017 11V7C12.017 5.34315 13.3601 4 15.017 4H19.017C20.6738 4 22.017 5.34315 22.017 7V11C22.017 12.6569 20.6738 14 19.017 14V16C19.017 18.2091 17.2261 20 15.017 20H14.017V21ZM2.01697 21L2.01697 18C2.01697 16.8954 2.9124 16 4.01697 16H7.01697V14H3.01697C1.36012 14 0.0169678 12.6569 0.0169678 11V7C0.0169678 5.34315 1.36012 4 3.01697 4H7.01697C8.67382 4 10.017 5.34315 10.017 7V11C10.017 12.6569 8.67382 14 7.01697 14V16C7.01697 18.2091 5.22611 20 3.01697 20H2.01697V21Z"/></svg>
+                    <p class="text-gray-300 text-lg italic leading-relaxed mb-8">"Infinity Ads transformed our TikTok presence. Their UGC strategies didn't just get views; they delivered a 12x ROI that we haven't seen with any other agency."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-brand-blue/20"></div>
+                        <div>
+                            <h5 class="font-bold text-white">Sarah Jenkins</h5>
+                            <p class="text-gray-500 text-xs">Founder, GlowSkin E-com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass p-8 sm:p-10 rounded-[32px] border border-brand-gold/10 relative">
+                    <svg class="w-10 h-10 text-brand-gold/20 absolute top-8 right-8" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017V14H15.017C13.3601 14 12.017 12.6569 12.017 11V7C12.017 5.34315 13.3601 4 15.017 4H19.017C20.6738 4 22.017 5.34315 22.017 7V11C22.017 12.6569 20.6738 14 19.017 14V16C19.017 18.2091 17.2261 20 15.017 20H14.017V21ZM2.01697 21L2.01697 18C2.01697 16.8954 2.9124 16 4.01697 16H7.01697V14H3.01697C1.36012 14 0.0169678 12.6569 0.0169678 11V7C0.0169678 5.34315 1.36012 4 3.01697 4H7.01697C8.67382 4 10.017 5.34315 10.017 7V11C10.017 12.6569 8.67382 14 7.01697 14V16C7.01697 18.2091 5.22611 20 3.01697 20H2.01697V21Z"/></svg>
+                    <p class="text-gray-300 text-lg italic leading-relaxed mb-8">"The technical depth they brought to our Google Ads setup was refreshing. Their custom scripts allowed us to outbid competitors while actually lowering our CPA."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-brand-gold/20"></div>
+                        <div>
+                            <h5 class="font-bold text-white">Marcus Thorne</h5>
+                            <p class="text-gray-500 text-xs">CMO, Fintech Solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries We Dominate -->
+    <section class="py-24 px-4 sm:px-6 bg-dark-800/30">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8 text-center lg:text-left">
+                    <h2 class="text-3xl sm:text-5xl font-heading font-bold">Industries We <br> <span class="text-brand-blue">Scale to Infinity.</span></h2>
+                    <p class="text-gray-400 text-lg leading-relaxed">We don't do "general" marketing. We have developed deep performance frameworks for high-growth sectors.</p>
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-4">
+                        <span class="px-6 py-3 rounded-full glass border border-white/10 text-white font-medium">E-Commerce</span>
+                        <span class="px-6 py-3 rounded-full glass border border-white/10 text-white font-medium">SaaS</span>
+                        <span class="px-6 py-3 rounded-full glass border border-white/10 text-white font-medium">Fintech</span>
+                        <span class="px-6 py-3 rounded-full glass border border-white/10 text-white font-medium">Lead Gen</span>
+                        <span class="px-6 py-3 rounded-full glass border border-white/10 text-white font-medium">Education</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <div class="h-40 glass rounded-3xl flex flex-col justify-center px-6 border-l-4 border-l-brand-blue">
+                            <h4 class="text-white font-bold text-xl mb-1">E-Com</h4>
+                            <p class="text-gray-500 text-xs">Scaling 7-8 figure brands.</p>
+                        </div>
+                        <div class="h-48 glass rounded-3xl flex flex-col justify-center px-6 border-l-4 border-l-brand-gold">
+                            <h4 class="text-white font-bold text-xl mb-1">Fintech</h4>
+                            <p class="text-gray-500 text-xs">High-security conversion flows.</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4 pt-8">
+                        <div class="h-48 glass rounded-3xl flex flex-col justify-center px-6 border-l-4 border-l-brand-blue">
+                            <h4 class="text-white font-bold text-xl mb-1">SaaS</h4>
+                            <p class="text-gray-500 text-xs">LTV-focused acquisition.</p>
+                        </div>
+                        <div class="h-40 glass rounded-3xl flex flex-col justify-center px-6 border-l-4 border-l-brand-gold">
+                            <h4 class="text-white font-bold text-xl mb-1">Lead Gen</h4>
+                            <p class="text-gray-500 text-xs">Volume with strict quality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Final CTA Section -->
     <section class="py-20 sm:py-32 px-4 sm:px-6">
         <div class="container mx-auto max-w-5xl">
@@ -321,7 +457,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black pt-24 pb-12">
+    <footer class="bg-black pt-24 pb-12 border-t border-white/5">
         <div class="container mx-auto px-6 max-w-7xl">
             <div class="flex flex-col md:flex-row justify-between items-start gap-12 md:gap-24 mb-20">
                 <!-- Brand Section -->
@@ -381,6 +517,31 @@
         closeBtn.addEventListener('click', () => {
             menu.classList.add('translate-x-full');
         });
+
+        // Growth Calculator Logic
+        const spendSlider = document.getElementById('spend-slider');
+        const roasSlider = document.getElementById('roas-slider');
+        const spendVal = document.getElementById('spend-val');
+        const roasVal = document.getElementById('roas-val');
+        const calcRevenue = document.getElementById('calc-revenue');
+        const calcRoi = document.getElementById('calc-roi');
+
+        function updateGrowth() {
+            const spend = parseInt(spendSlider.value);
+            const roas = parseFloat(roasSlider.value);
+            const revenue = spend * roas;
+
+            spendVal.textContent = `$${spend.toLocaleString()}`;
+            roasVal.textContent = `${roas.toFixed(1)}x`;
+            calcRevenue.textContent = `$${revenue.toLocaleString()}`;
+            calcRoi.textContent = `${roas.toFixed(1)}x`;
+        }
+
+        spendSlider.addEventListener('input', updateGrowth);
+        roasSlider.addEventListener('input', updateGrowth);
+        
+        // Initial call
+        updateGrowth();
     </script>
 </body>
 </html>
