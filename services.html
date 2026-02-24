@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Infinity Ads - Digital Marketing Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        dark: {
+                            900: '#05070A',
+                            800: '#0F131A',
+                            700: '#1A1F26',
+                        },
+                        brand: {
+                            blue: '#1D4ED8',
+                            gold: '#D97706',
+                            grey: '#4B5563',
+                        }
+                    },
+                    backgroundImage: {
+                        'hero-glow': 'radial-gradient(circle at 50% 0%, rgba(29, 78, 216, 0.15) 0%, rgba(5, 7, 10, 0) 70%)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .video-bg-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            overflow: hidden;
+        }
+        .video-bg-container video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            opacity: 0.6;
+        }
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(5, 7, 10, 0.4) 0%, rgba(5, 7, 10, 0.7) 100%);
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body class="bg-dark-900 text-white font-sans antialiased overflow-x-hidden selection:bg-brand-blue selection:text-white">
+
+    <!-- Navbar -->
+    <header class="fixed w-full top-0 z-50 bg-dark-900/80 backdrop-blur-md border-b border-white/5">
+        <div class="container mx-auto px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="images/logo.png" alt="Infinity Ads Logo" class="h-8 sm:h-11">
+            </a>
+            
+            <nav class="hidden lg:flex items-center gap-8 text-[15px] font-medium text-gray-400">
+                <a href="services.html" class="text-white font-semibold underline decoration-brand-blue decoration-2 underline-offset-8">Services</a>
+                <a href="about.html" class="hover:text-white transition-colors">About</a>
+                <a href="contact.html" class="px-6 py-2.5 rounded-full bg-brand-blue text-white font-bold hover:bg-blue-600 transition-all hover:scale-105 active:scale-95 shadow-lg shadow-brand-blue/20">
+                    Let's Talk
+                </a>
+            </nav>
+
+            <button id="mobile-menu-btn" class="lg:hidden text-gray-300 hover:text-white p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 sm:w-8 sm:h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="fixed inset-0 z-[60] bg-dark-900/98 backdrop-blur-2xl transform translate-x-full transition-transform duration-500 lg:hidden flex flex-col items-center justify-center space-y-8 p-6">
+            <button id="close-menu-btn" class="absolute top-6 right-6 text-gray-400 hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <a href="index.html" class="text-3xl font-heading font-bold text-white">Home</a>
+            <a href="services.html" class="text-3xl font-heading font-bold text-brand-blue">Services</a>
+            <a href="about.html" class="text-3xl font-heading font-bold text-white">About</a>
+            <a href="contact.html" class="text-3xl font-heading font-bold text-brand-gold">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative pt-32 sm:pt-40 pb-12 sm:pb-20 px-4 sm:px-6 min-h-[60vh] flex items-center justify-center overflow-hidden">
+        <div class="video-bg-container">
+            <video autoplay muted loop playsinline>
+                <source src="images/hero-bg.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        
+        <div class="container mx-auto max-w-4xl text-center relative z-10">
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-heading font-extrabold mb-4 sm:mb-6 leading-tight">Our Expertise</h1>
+            <p class="text-base sm:text-xl text-gray-400 max-w-2xl mx-auto px-2">
+                Scalable performance marketing strategies powered by data and driven by results.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="pb-20 sm:pb-32 px-4 sm:px-6">
+        <div class="container mx-auto max-w-6xl space-y-20 sm:space-y-32">
+            
+            <!-- 1. Facebook Meta Ads -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 items-center">
+                <div class="space-y-4 sm:space-y-6 text-center lg:text-left">
+                    <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-2xl bg-brand-blue/10 flex items-center justify-center text-brand-blue mx-auto lg:mx-0 border border-brand-blue/20">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 sm:w-8 sm:h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-heading font-bold">Facebook & Meta Ads</h2>
+                    <p class="text-gray-400 text-sm sm:text-lg leading-relaxed">
+                        We leverage the power of Meta's machine learning to find your buyers where they spend their time. Our strategy focuses on pattern-interrupt creative and surgical audience segmentation.
+                    </p>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 text-gray-300 font-medium text-left">
+                        <li class="flex items-center gap-2 sm:gap-3 text-xs sm:text-base"><span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>Dynamic Creative Testing</li>
+                        <li class="flex items-center gap-2 sm:gap-3 text-xs sm:text-base"><span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>CAPI Implementation</li>
+                        <li class="flex items-center gap-2 sm:gap-3 text-xs sm:text-base"><span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>Advantage+ Shopping</li>
+                        <li class="flex items-center gap-2 sm:gap-3 text-xs sm:text-base"><span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>Lookalike Scaling</li>
+                    </ul>
+                </div>
+                <div class="glass rounded-2xl sm:rounded-3xl h-64 sm:h-80 flex items-center justify-center relative overflow-hidden order-first lg:order-last">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-brand-blue/10 to-transparent opacity-50"></div>
+                    <span class="text-6xl sm:text-8xl font-heading font-bold text-white/[0.03] absolute -bottom-5 sm:-bottom-10 -right-5 sm:-right-10 select-none">META</span>
+                </div>
+            </div>
+
+            <!-- 2. Google Ads -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 items-center">
+                <div class="order-last lg:order-first glass rounded-2xl sm:rounded-3xl h-64 sm:h-80 flex items-center justify-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-brand-gold/10 to-transparent opacity-50"></div>
+                    <span class="text-6xl sm:text-8xl font-heading font-bold text-white/[0.03] absolute -bottom-5 sm:-bottom-10 -left-5 sm:-left-10 select-none">SEARCH</span>
+                </div>
+                <div class="space-y-4 sm:space-y-6 text-center lg:text-left">
+                    <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold mx-auto lg:mx-0 border border-brand-gold/20">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 sm:w-8 sm:h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-heading font-bold">Google Ads Mastery</h2>
+                    <p class="text-gray-400 text-sm sm:text-lg leading-relaxed">
+                        Capture high-intent traffic at the exact moment they search for your solution. We dominate Search, YouTube, and Performance Max to ensure maximum visibility and conversion.
+                    </p>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 text-gray-300 font-medium text-left">
+                        <li class="flex items-center gap-2 sm:gap-3 text-xs sm:text-base"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold shrink-0"></span>Search Network Domination</li>
+                        <li class="flex items-center gap-2 sm:gap-3 text-xs sm:text-base"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold shrink-0"></span>YouTube Ads</li>
+                        <li class="flex items-center gap-2 sm:gap-3 text-xs sm:text-base"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold shrink-0"></span>PMAX Optimization</li>
+                        <li class="flex items-center gap-2 sm:gap-3 text-xs sm:text-base"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold shrink-0"></span>Google Shopping</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 3. TikTok Ads -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 items-center">
+                <div class="space-y-4 sm:space-y-6 text-center lg:text-left">
+                    <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-2xl bg-white/5 flex items-center justify-center text-white mx-auto lg:mx-0 border border-white/10">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 sm:w-8 sm:h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.65-1.62-1.12-1.61 2.75-4.97 5.5-9.04 4.88-3.08-.24-5.69-2.3-6.57-5.28-.9-2.98.05-6.09 2.5-8.08 1.72-1.42 4-2.16 6.28-1.78.2.03.4.07.6.13V2.17c-.57-.18-1.17-.28-1.77-.28-3.04.03-5.74 2.18-6.39 5.21-.65 3.02.77 6.05 3.39 7.42 2.63 1.37 6 1.05 8.23-1.07 1.72-1.64 2.4-4.14 1.71-6.56h3.1c.36 1.95 1.48 3.73 3.1 4.88 1.62 1.15 3.65 1.54 5.56 1.08v-4.04c-1.64.09-3.23-.51-4.44-1.68-1.2-1.17-1.83-2.81-1.75-4.5h-4.12z"/></svg>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-heading font-bold">TikTok Advertising</h2>
+                    <p class="text-gray-400 text-sm sm:text-lg leading-relaxed">
+                        Don't make ads, make TikToks. We produce viral-style UGC (User Generated Content) and manage high-volume campaigns that tap into TikTok's massive engagement.
+                    </p>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 text-gray-300 font-medium text-left">
+                        <li class="flex items-center gap-2 sm:gap-3 text-xs sm:text-base"><span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>UGC Production</li>
+                        <li class="flex items-center gap-2 sm:gap-3 text-xs sm:text-base"><span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>Spark Ads</li>
+                        <li class="flex items-center gap-2 sm:gap-3 text-xs sm:text-base"><span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>Viral Strategy</li>
+                        <li class="flex items-center gap-2 sm:gap-3 text-xs sm:text-base"><span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>Creator Collabs</li>
+                    </ul>
+                </div>
+                <div class="glass rounded-2xl sm:rounded-3xl h-64 sm:h-80 flex items-center justify-center relative overflow-hidden order-first lg:order-last">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent opacity-50"></div>
+                    <span class="text-6xl sm:text-8xl font-heading font-bold text-white/[0.03] absolute -bottom-5 sm:-bottom-10 -right-5 sm:-right-10 select-none">TIKTOK</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black pt-24 pb-12 border-t border-white/5">
+        <div class="container mx-auto px-6 max-w-7xl">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-12 md:gap-24 mb-20">
+                <!-- Brand Section -->
+                <div class="w-full md:w-1/2 space-y-10 text-left">
+                    <a href="index.html" class="inline-block">
+                         <img src="images/logo.png" alt="Infinity Ads Logo" class="h-10">
+                    </a>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        Elevating brands through data-driven digital mastery.<br>
+                        Scale your presence across every major digital<br>
+                        touchpoint.
+                    </p>
+                </div>
+                
+                <div class="flex flex-row w-full md:w-1/2 justify-start gap-16 md:gap-32 text-left">
+                    <!-- Services -->
+                    <div class="space-y-8">
+                        <h4 class="font-bold text-white text-xl font-heading">Services</h4>
+                        <ul class="space-y-4 text-gray-400 font-medium">
+                            <li><a href="services.html" class="hover:text-white transition-colors">SEO Optimization</a></li>
+                            <li><a href="services.html" class="hover:text-white transition-colors">Paid Social</a></li>
+                            <li><a href="services.html" class="hover:text-white transition-colors">Search Ads</a></li>
+                            <li><a href="services.html" class="hover:text-white transition-colors">Programmatic</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Company -->
+                    <div class="space-y-8">
+                        <h4 class="font-bold text-white text-xl font-heading">Company</h4>
+                        <ul class="space-y-4 text-gray-400 font-medium">
+                            <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                            <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                            <li><a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                            <li><a href="terms-conditions.html" class="hover:text-white transition-colors">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-white/5 text-center">
+                <p class="text-gray-600 text-sm">
+                    &copy; 2025 Infinity Ads. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const closeBtn = document.getElementById('close-menu-btn');
+
+        btn.addEventListener('click', () => {
+            menu.classList.remove('translate-x-full');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            menu.classList.add('translate-x-full');
+        });
+    </script>
+</body>
+</html>
