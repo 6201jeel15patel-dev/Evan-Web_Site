@@ -81,7 +81,7 @@
     <header class="fixed w-full top-0 z-50 bg-dark-900/80 backdrop-blur-md border-b border-white/5">
         <div class="container mx-auto px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-3 group">
-                <img src="images/logo.png" alt="Infinity Ads Logo" class="h-8 sm:h-11">
+                <img src="images/logo.png" alt="Infinity Ads Logo" class="h-8 sm:h-9 md:h-11">
             </a>
             
             <nav class="hidden lg:flex items-center gap-8 text-[15px] font-medium text-gray-400">
@@ -113,7 +113,7 @@
     </header>
 
     <!-- Hero -->
-    <section class="relative pt-32 sm:pt-40 pb-12 sm:pb-20 px-4 sm:px-6 min-h-[60vh] flex items-center justify-center overflow-hidden">
+    <section class="relative pt-32 sm:pt-40 pb-12 sm:pb-20 px-4 sm:px-6 min-h-[60vh] flex items-center justify-center overflow-hidden text-center">
         <div class="video-bg-container">
             <video autoplay muted loop playsinline>
                 <source src="images/hero-bg.mp4" type="video/mp4">
@@ -121,87 +121,191 @@
             <div class="video-overlay"></div>
         </div>
         
-        <div class="container mx-auto max-w-4xl text-center relative z-10">
-            <h1 class="text-4xl sm:text-6xl md:text-7xl font-heading font-extrabold mb-4 sm:mb-6 leading-tight">Our Expertise</h1>
-            <p class="text-base sm:text-xl text-gray-400 max-w-2xl mx-auto px-2">
-                Scalable performance marketing strategies powered by data and driven by results.
+        <div class="container mx-auto max-w-4xl relative z-10">
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-heading font-extrabold mb-4 sm:mb-6 leading-tight">Infinite Growth <br> <span class="text-brand-blue">Starts Here.</span></h1>
+            <p class="text-base sm:text-xl text-gray-400 max-w-2xl mx-auto px-2 leading-relaxed">
+                Beyond standard agency models. We deploy technical, data-driven frameworks designed to dominate every digital touchpoint.
             </p>
         </div>
     </section>
 
-    <!-- Services Grid -->
-    <section class="pb-20 sm:pb-32 px-4 sm:px-6">
-        <div class="container mx-auto max-w-6xl space-y-20 sm:space-y-32">
+    <!-- Detailed Services Section -->
+    <section class="py-20 sm:py-32 px-4 sm:px-6">
+        <div class="container mx-auto max-w-6xl space-y-32">
             
             <!-- 1. Facebook Meta Ads -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 items-center">
-                <div class="space-y-4 sm:space-y-6 text-center lg:text-left">
-                    <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-2xl bg-brand-blue/10 flex items-center justify-center text-brand-blue mx-auto lg:mx-0 border border-brand-blue/20">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 sm:w-8 sm:h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-20 items-center">
+                <div class="space-y-6 text-left">
+                    <div class="w-16 h-16 rounded-2xl bg-brand-blue/10 flex items-center justify-center text-brand-blue border border-brand-blue/20">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                     </div>
-                    <h2 class="text-3xl sm:text-4xl font-heading font-bold">Facebook & Meta Ads</h2>
+                    <h2 class="text-3xl sm:text-5xl font-heading font-bold">Facebook & Meta Ads</h2>
                     <p class="text-gray-400 text-sm sm:text-lg leading-relaxed">
-                        We leverage the power of Meta's machine learning to find your buyers where they spend their time. Our strategy focuses on pattern-interrupt creative and surgical audience segmentation.
+                        In an era of signal loss and iOS privacy changes, standard Meta management is failing. Our approach combines **Advanced CAPI (Conversions API)** integration with high-frequency dynamic creative testing to bypass browser limitations. We don't just "run ads"—we architect full-funnel systems that speak directly to your target buyer's psychology.
                     </p>
-                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 text-gray-300 font-medium text-left">
-                        <li class="flex items-center gap-2 sm:gap-3 text-xs sm:text-base"><span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>Dynamic Creative Testing</li>
-                        <li class="flex items-center gap-2 sm:gap-3 text-xs sm:text-base"><span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>CAPI Implementation</li>
-                        <li class="flex items-center gap-2 sm:gap-3 text-xs sm:text-base"><span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>Advantage+ Shopping</li>
-                        <li class="flex items-center gap-2 sm:gap-3 text-xs sm:text-base"><span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>Lookalike Scaling</li>
+                    <p class="text-gray-400 text-sm sm:text-lg leading-relaxed">
+                        From Advantage+ Shopping campaign scaling to manual bid warfare, we manage the technical complexity so you can focus on inventory and fulfillment.
+                    </p>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-300 font-medium">
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-blue"></span>Server-Side Conversion API</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-blue"></span>Advantage+ Scaling</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-blue"></span>Dynamic Retargeting</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-blue"></span>Lookalike Engine 2.0</li>
                     </ul>
                 </div>
-                <div class="glass rounded-2xl sm:rounded-3xl h-64 sm:h-80 flex items-center justify-center relative overflow-hidden order-first lg:order-last">
+                <div class="glass rounded-3xl h-80 flex items-center justify-center relative overflow-hidden order-first lg:order-last">
                     <div class="absolute inset-0 bg-gradient-to-tr from-brand-blue/10 to-transparent opacity-50"></div>
-                    <span class="text-6xl sm:text-8xl font-heading font-bold text-white/[0.03] absolute -bottom-5 sm:-bottom-10 -right-5 sm:-right-10 select-none">META</span>
+                    <span class="text-8xl font-heading font-bold text-white/[0.03] absolute -bottom-10 -right-10 select-none">META</span>
                 </div>
             </div>
 
-            <!-- 2. Google Ads -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 items-center">
-                <div class="order-last lg:order-first glass rounded-2xl sm:rounded-3xl h-64 sm:h-80 flex items-center justify-center relative overflow-hidden">
+            <!-- 2. Google Ads Mastery -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-20 items-center">
+                <div class="order-last lg:order-first glass rounded-3xl h-80 flex items-center justify-center relative overflow-hidden">
                     <div class="absolute inset-0 bg-gradient-to-tr from-brand-gold/10 to-transparent opacity-50"></div>
-                    <span class="text-6xl sm:text-8xl font-heading font-bold text-white/[0.03] absolute -bottom-5 sm:-bottom-10 -left-5 sm:-left-10 select-none">SEARCH</span>
+                    <span class="text-8xl font-heading font-bold text-white/[0.03] absolute -bottom-10 -left-10 select-none">SEARCH</span>
                 </div>
-                <div class="space-y-4 sm:space-y-6 text-center lg:text-left">
-                    <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold mx-auto lg:mx-0 border border-brand-gold/20">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 sm:w-8 sm:h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>
+                <div class="space-y-6 text-left">
+                    <div class="w-16 h-16 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold border border-brand-gold/20">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>
                     </div>
-                    <h2 class="text-3xl sm:text-4xl font-heading font-bold">Google Ads Mastery</h2>
+                    <h2 class="text-3xl sm:text-5xl font-heading font-bold">Google Ads & PMAX</h2>
                     <p class="text-gray-400 text-sm sm:text-lg leading-relaxed">
-                        Capture high-intent traffic at the exact moment they search for your solution. We dominate Search, YouTube, and Performance Max to ensure maximum visibility and conversion.
+                        We don't just bid on keywords; we target search intent. Our Google strategy utilizes **Performance Max (PMAX)** coupled with custom asset groups and high-intent keyword exclusion lists to ensure you're not paying for "junk" traffic. We optimize your Merchant Center feed for E-com dominance and build dedicated landing pages for SaaS lead-gen.
                     </p>
-                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 text-gray-300 font-medium text-left">
-                        <li class="flex items-center gap-2 sm:gap-3 text-xs sm:text-base"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold shrink-0"></span>Search Network Domination</li>
-                        <li class="flex items-center gap-2 sm:gap-3 text-xs sm:text-base"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold shrink-0"></span>YouTube Ads</li>
-                        <li class="flex items-center gap-2 sm:gap-3 text-xs sm:text-base"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold shrink-0"></span>PMAX Optimization</li>
-                        <li class="flex items-center gap-2 sm:gap-3 text-xs sm:text-base"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold shrink-0"></span>Google Shopping</li>
+                    <p class="text-gray-400 text-sm sm:text-lg leading-relaxed">
+                        Dominate the top of page results and YouTube pre-roll. We ensure your brand is seen exactly when your customers are ready to buy.
+                    </p>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-300 font-medium">
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-gold"></span>Feed Optimization (E-com)</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-gold"></span>PMAX Creative Assets</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-gold"></span>YouTube Brand Scaling</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-gold"></span>Negative Keyword War</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- 3. TikTok Ads -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 items-center">
-                <div class="space-y-4 sm:space-y-6 text-center lg:text-left">
-                    <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-2xl bg-white/5 flex items-center justify-center text-white mx-auto lg:mx-0 border border-white/10">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 sm:w-8 sm:h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.65-1.62-1.12-1.61 2.75-4.97 5.5-9.04 4.88-3.08-.24-5.69-2.3-6.57-5.28-.9-2.98.05-6.09 2.5-8.08 1.72-1.42 4-2.16 6.28-1.78.2.03.4.07.6.13V2.17c-.57-.18-1.17-.28-1.77-.28-3.04.03-5.74 2.18-6.39 5.21-.65 3.02.77 6.05 3.39 7.42 2.63 1.37 6 1.05 8.23-1.07 1.72-1.64 2.4-4.14 1.71-6.56h3.1c.36 1.95 1.48 3.73 3.1 4.88 1.62 1.15 3.65 1.54 5.56 1.08v-4.04c-1.64.09-3.23-.51-4.44-1.68-1.2-1.17-1.83-2.81-1.75-4.5h-4.12z"/></svg>
+            <!-- 3. TikTok Advertising -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-20 items-center">
+                <div class="space-y-6 text-left">
+                    <div class="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center text-white border border-white/10">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.65-1.62-1.12-1.61 2.75-4.97 5.5-9.04 4.88-3.08-.24-5.69-2.3-6.57-5.28-.9-2.98.05-6.09 2.5-8.08 1.72-1.42 4-2.16 6.28-1.78.2.03.4.07.6.13V2.17c-.57-.18-1.17-.28-1.77-.28-3.04.03-5.74 2.18-6.39 5.21-.65 3.02.77 6.05 3.39 7.42 2.63 1.37 6 1.05 8.23-1.07 1.72-1.64 2.4-4.14 1.71-6.56h3.1c.36 1.95 1.48 3.73 3.1 4.88 1.62 1.15 3.65 1.54 5.56 1.08v-4.04c-1.64.09-3.23-.51-4.44-1.68-1.2-1.17-1.83-2.81-1.75-4.5h-4.12z"/></svg>
                     </div>
-                    <h2 class="text-3xl sm:text-4xl font-heading font-bold">TikTok Advertising</h2>
+                    <h2 class="text-3xl sm:text-5xl font-heading font-bold">TikTok Viral Ads</h2>
                     <p class="text-gray-400 text-sm sm:text-lg leading-relaxed">
-                        Don't make ads, make TikToks. We produce viral-style UGC (User Generated Content) and manage high-volume campaigns that tap into TikTok's massive engagement.
+                        TikTok is not about "ads"—it's about content. Our TikTok creative department produces high-retention, **algorithm-native UGC** that looks like organic content but sells like a powerhouse. We manage the entire lifecycle from creator sourcing to Spark Ads deployment and scaling winning trends in real-time.
                     </p>
-                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 text-gray-300 font-medium text-left">
-                        <li class="flex items-center gap-2 sm:gap-3 text-xs sm:text-base"><span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>UGC Production</li>
-                        <li class="flex items-center gap-2 sm:gap-3 text-xs sm:text-base"><span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>Spark Ads</li>
-                        <li class="flex items-center gap-2 sm:gap-3 text-xs sm:text-base"><span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>Viral Strategy</li>
-                        <li class="flex items-center gap-2 sm:gap-3 text-xs sm:text-base"><span class="w-1.5 h-1.5 rounded-full bg-brand-blue shrink-0"></span>Creator Collabs</li>
+                    <p class="text-gray-400 text-sm sm:text-lg leading-relaxed">
+                        Tap into the world's most engaged audience with a strategy that values entertainment as much as the offer.
+                    </p>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-300 font-medium">
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-blue"></span>Creator Management</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-blue"></span>High-Retention Editing</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-blue"></span>Spark Ads & Shop Ads</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-blue"></span>Trend-Jack Scaling</li>
                     </ul>
                 </div>
-                <div class="glass rounded-2xl sm:rounded-3xl h-64 sm:h-80 flex items-center justify-center relative overflow-hidden order-first lg:order-last">
+                <div class="glass rounded-3xl h-80 flex items-center justify-center relative overflow-hidden order-first lg:order-last">
                     <div class="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent opacity-50"></div>
-                    <span class="text-6xl sm:text-8xl font-heading font-bold text-white/[0.03] absolute -bottom-5 sm:-bottom-10 -right-5 sm:-right-10 select-none">TIKTOK</span>
+                    <span class="text-8xl font-heading font-bold text-white/[0.03] absolute -bottom-10 -right-10 select-none">TIKTOK</span>
                 </div>
             </div>
 
+            <!-- 4. Media Buying -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-20 items-center">
+                <div class="order-last lg:order-first glass rounded-3xl h-80 flex items-center justify-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-brand-blue/10 to-transparent opacity-50"></div>
+                    <span class="text-8xl font-heading font-bold text-white/[0.03] absolute -bottom-10 -left-10 select-none">BUYING</span>
+                </div>
+                <div class="space-y-6 text-left">
+                    <div class="w-16 h-16 rounded-2xl bg-brand-blue/10 flex items-center justify-center text-brand-blue border border-brand-blue/20">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </div>
+                    <h2 class="text-3xl sm:text-5xl font-heading font-bold">Programmatic Buying</h2>
+                    <p class="text-gray-400 text-sm sm:text-lg leading-relaxed">
+                        Go beyond the walled gardens of Meta and Google. We utilize **Real-Time Bidding (RTB)** and programmatic direct deals to secure premium ad inventory across 90% of the open web. Our system allows us to place your brand on high-authority news sites, native networks (Taboola/Outbrain), and connected TV.
+                    </p>
+                    <p class="text-gray-400 text-sm sm:text-lg leading-relaxed">
+                        Unified audience tracking across every placement ensures a seamless customer journey from first impression to final conversion.
+                    </p>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-300 font-medium">
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-blue"></span>Native Ad Domination</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-blue"></span>Connected TV (CTV) Ads</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-blue"></span>Omnichannel Remarketing</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-blue"></span>Real-Time Bidding</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 5. SEO Optimization (NEW) -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-20 items-center">
+                <div class="space-y-6 text-left">
+                    <div class="w-16 h-16 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold border border-brand-gold/20">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                    </div>
+                    <h2 class="text-3xl sm:text-5xl font-heading font-bold">Search Domination (SEO)</h2>
+                    <p class="text-gray-400 text-sm sm:text-lg leading-relaxed">
+                        SEO is no longer just about keywords; it's about **Search Generative Experience (SGE)** and user authority. We rebuild your site's technical foundation to satisfy core web vitals while our content team produces semantic, high-value articles that satisfy both AI search engines and human readers.
+                    </p>
+                    <p class="text-gray-400 text-sm sm:text-lg leading-relaxed">
+                        We focus on **Technical SEO**, **Strategic Content Architecture**, and **White-Hat Authority Building** to drive free, high-intent traffic for years to come.
+                    </p>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-300 font-medium">
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-gold"></span>Technical Vitals Audit</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-gold"></span>Semantic Content Maps</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-gold"></span>Authority Backlink Growth</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-gold"></span>Local & Global Scaling</li>
+                    </ul>
+                </div>
+                <div class="glass rounded-3xl h-80 flex items-center justify-center relative overflow-hidden order-first lg:order-last">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-brand-gold/10 to-transparent opacity-50"></div>
+                    <span class="text-8xl font-heading font-bold text-white/[0.03] absolute -bottom-10 -right-10 select-none">ORGANIC</span>
+                </div>
+            </div>
+
+            <!-- 6. Advanced Tracking (NEW) -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-20 items-center">
+                <div class="order-last lg:order-first glass rounded-3xl h-80 flex items-center justify-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-brand-blue/10 to-transparent opacity-50"></div>
+                    <span class="text-8xl font-heading font-bold text-white/[0.03] absolute -bottom-10 -left-10 select-none">TRACK</span>
+                </div>
+                <div class="space-y-6 text-left">
+                    <div class="w-16 h-16 rounded-2xl bg-brand-blue/10 flex items-center justify-center text-brand-blue border border-brand-blue/20">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                    </div>
+                    <h2 class="text-3xl sm:text-5xl font-heading font-bold">Measurement & Attribution</h2>
+                    <p class="text-gray-400 text-sm sm:text-lg leading-relaxed">
+                        Data is useless if it's inaccurate. We deploy **Server-Side Google Tag Manager (sGTM)** and advanced attribution models to track every dollar through the entire sales cycle. We bridge the gap between ad platforms and your CRM, giving you a true 1:1 view of your Customer Acquisition Cost (CAC) and Lifetime Value (LTV).
+                    </p>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-300 font-medium">
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-blue"></span>Server-Side sGTM</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-blue"></span>Custom ROI Dashboards</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-blue"></span>CRM Lead Integration</li>
+                        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-brand-blue"></span>Multi-Touch Attribution</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-20 sm:py-32 px-4 sm:px-6">
+        <div class="container mx-auto max-w-5xl">
+            <div class="relative glass rounded-[30px] sm:rounded-[40px] p-8 sm:p-12 md:p-20 overflow-hidden text-center border border-brand-blue/30 shadow-2xl">
+                <div class="absolute -top-24 -left-24 w-48 sm:w-64 h-48 sm:h-64 bg-brand-blue/20 rounded-full blur-[80px] sm:blur-[100px]"></div>
+                <div class="absolute -bottom-24 -right-24 w-48 sm:w-64 h-48 sm:h-64 bg-brand-gold/10 rounded-full blur-[80px] sm:blur-[100px]"></div>
+                
+                <h2 class="text-3xl sm:text-5xl md:text-6xl font-heading font-extrabold mb-6 sm:mb-8 relative z-10 leading-tight">Ready to deploy <br> <span class="text-brand-blue">The Infinite Strategy?</span></h2>
+                <p class="text-base sm:text-xl text-gray-400 mb-8 sm:mb-12 max-w-2xl mx-auto relative z-10 leading-relaxed px-2">
+                    Schedule an audit call today. We'll examine your current funnels and show you exactly where we'll inject growth.
+                </p>
+                <div class="relative z-10">
+                    <a href="contact.html" class="inline-block w-full sm:w-auto px-10 sm:px-12 py-5 sm:py-6 bg-brand-blue text-white font-heading font-bold text-lg sm:text-xl rounded-2xl hover:bg-blue-600 shadow-2xl shadow-brand-blue/40 transition-all duration-300 hover:scale-105 active:scale-95">
+                        Start Your Free Performance Audit
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
