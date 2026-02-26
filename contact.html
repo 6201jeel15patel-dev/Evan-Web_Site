@@ -368,9 +368,13 @@
                     });
 
                     if (response.ok) {
-                        formStatus.textContent = "Target Locked. Inquiry Sent Successfully.";
-                        formStatus.classList.remove('hidden', 'text-red-500');
-                        formStatus.classList.add('text-emerald-500');
+                        formStatus.innerHTML = `
+                            <div class="space-y-2 py-2">
+                                <p class="text-xl sm:text-2xl font-bold text-emerald-500 tracking-tight">Thank you for reaching out to us!</p>
+                                <p class="text-xs sm:text-sm font-normal text-gray-400 normal-case tracking-normal leading-relaxed">We truly appreciate your interest. Our representative will contact you shortly to assist you further.</p>
+                            </div>
+                        `;
+                        formStatus.classList.remove('hidden', 'text-red-500', 'text-xs', 'font-bold', 'uppercase', 'tracking-widest');
                         contactForm.reset();
                     } else {
                         throw new Error();
@@ -378,7 +382,7 @@
                 } catch (error) {
                     formStatus.textContent = "Connection Error. Please Try Again.";
                     formStatus.classList.remove('hidden', 'text-emerald-500');
-                    formStatus.classList.add('text-red-500');
+                    formStatus.classList.add('text-red-500', 'text-xs', 'font-bold', 'uppercase', 'tracking-widest');
                 } finally {
                     submitBtn.disabled = false;
                     btnText.textContent = "Launch Inquiry";
